@@ -36,19 +36,17 @@ export class Rocket {
         };
     };
 
-    addCargo(cargo: Cargo): boolean{
+    addCargo(cargo: Cargo){
         if (this.canAdd(cargo) === true){
-          this.cargoItems.push(cargo);
-          return true;
+          return this.cargoItems.push(cargo);
         } else {
             return false;
         };
     };
 
-    addAstronaut(astronaut: Astronaut): boolean{
+    addAstronaut(astronaut: Astronaut){
         if(this.canAdd(astronaut) === true){
-            this.astronauts.push(astronaut);
-            return true;
+           return this.astronauts.push(astronaut);
         }else{
             return false;
         };
